@@ -1,0 +1,14 @@
+#sty{
+    font-size: larger;
+    text-decoration: none;
+    border: solid 2px;
+    border-color: blue;
+    background-color: yellowgreen;
+}
+#sty:hover{
+    text-decoration: none;
+    border-color: red;
+    font-size: x-large;
+    border-width: 4px;
+
+}

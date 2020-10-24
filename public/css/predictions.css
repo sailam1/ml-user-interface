@@ -1,0 +1,38 @@
+#down{
+    text-decoration: none;
+    color: black;
+    background-color: chartreuse;
+    border: solid black;
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#down:hover{
+    font-size: larger;
+    background-color: green;
+    border-color: red;
+    padding: 5px 3px;
+}
+
+#root{
+    text-align: right;
+}
+
+#root:hover{
+    font-size: larger;
+    border: 4px;
+    transition: 0.4s;
+}
+button{
+    background-color: greenyellow;
+    border:solid black;
+}
+button:hover{
+    border-color: red;
+}
+
+#help{
+    text-align: center;
+}

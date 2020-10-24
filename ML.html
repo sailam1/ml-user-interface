@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ml</title>
+        <link rel="stylesheet" href="css/style_ml.css">
+        <link rel="icon" href="images/favicon2.ico">
+        <script src="javascript/ml.js"></script>
+    </head>
+    <body onload="off(); on();">
+        <div id="loader" class="center"></div>
+        <h1>MACHINE LEARNING</h1>
+        <nav>
+            <a class="a_style" href="home.html">home</a>
+            <a class="a_style" href="datapre.html">data-processing</a>
+            <a class="a_style" id="active" href="ML.html">Machine Learning</a>
+            <a class="a_style" href="predator.html">predictor</a>
+            <a class="a_style" href="help.html">Help</a>
+            
+        </nav>
+        <form method="POST" action="/signout">
+            <button id="logout" href="signout" role="button">signout</button>
+        </form>
+        <form name="inputs" action="/ml_submit" method="POST" name="form1">
+            <input onchange="switchs()" type="radio" id="RP" name="algo">
+            <label for="RP">regression problem:</label><br>
+            <select onclick="hyswitch()" name="RP" class=selects>
+                <option selected>None Selected</option>
+                <option>Multiple Regression</option>
+                <option>Polynomial Regression</option>
+                <option>Decision Tree Regression</option>
+                <option>Random Forest Regression</option>
+                <option>ANN(Artificial Neural Network)</option>
+                <option>Auto select</option>
+            </select><br><br>
+            <input onchange="switchs()" type="radio" id="CP" name="algo">
+            <label for="CP">Classification Problem:</label><br>
+            <select  onclick="hyswitch()" name="CP" class="selects">
+                <option selected>None Selected</option>
+                <option>Logistic Regression</option>
+                <option>K-Nearest Neighbors</option>
+                <option>SVM(Support Vector Machine)</option>
+                <option>Kernal SVM</option>
+                <option>naive Bayes</option>
+                <option>Decision Tree Classification</option>
+                <option>Random Forest Classification</option>
+                <option>ANN(Artificial Neural Networks)</option>
+                <option>Auto Select</option>
+            </select><br><br>
+            <input onchange="switchs()" type="radio" id="ClP" name="algo">
+            <label for="ClP">Clustering:</label><br>
+            <select onclick="hyswitch()" name="ClP" class="selects">
+                <option selected>None Selected</option>
+                <option>Decision Tree Clustering</option>
+                <option>K-Means Clustering</option>
+                <option>Hierarchical Clustering</option>
+                <option>Auto Select</option>
+            </select><br><br>
+            
+            <!--choose between default and hypertunning-->
+            <h2 class="hypers">choose the hyper parameters</h2>
+            <input onclick="hyswitch1()" type="radio" id="default" name="hy_params" class="hypers">
+            <label for="default">Default Parameters(Recommanded for beginners)</label><br>
+            <input onclick="hyon()" type="radio" id="manual_params" name="hy_params" class="hypers">
+            <label for="manual_params">choose parameters</label><br><br>
+
+
+            <!--RP_polynomial regression-->
+            <div class="hyper">
+                <label for="poly_dig">Polynomial Degree:</label>
+                <input class="reseter" id="poly_dig" name="poly_deg" type="number" placeholder="Enter">
+            </div>
+
+            <!--RP_Random Forest Regression-->
+            <div class="hyper">
+                <label for="hy_RFR">n.o of trees:</label>
+                <input class="reseter" id="hy_RFR" name="RP_treeCount" type="number" id="hy_RFR" placeholder="Enter">
+            </div>
+
+            <!--CP_Logistic Regression -->
+            <div class="hyper">
+                <label for="lr">C:</label>
+                <input class="reseter" id="lr" type="number" placeholder="Enter" name="CP_lr_C">
+            </div>
+
+
+            <!--CP_K-nearest Neighbor-->
+            <div class="hyper">
+                <label for="knn">n_neighbors:</label>
+                <input class="reseter" id="knn" type="number" placeholder="Enter" name="CP_n_neighbors">
+            </div>
+
+            <!--CP_SVC-->
+            <div class="hyper">
+                <label for="svc">C:</label>
+                <input class="reseter" id="svc" type="number" placeholder="Enter" name="CP_svc_C">
+            </div>
+
+            <!--kernel_svc-->
+            <div class="hyper">
+                <label for="k-svc">C:</label>
+                <input class="reseter" id="k-svc" type="number" placeholder="Enter" name="CP_k-svc_C">
+            </div>
+
+            <!--neive bayes-->
+            <div class="hyper">
+                <p>no params</p>
+            </div>
+
+            <!--Desicion tree classification-->
+            <div class="hyper">
+                <p>in devlopment</p>
+            </div>
+
+            <!--random forest classification-->
+            <div class="hyper">
+                <label for="rfc">n_tress:</label>
+                <input class="reseter" id="rfc" type="number" placeholder="Enter" name="CP_n_trees">
+            </div>
+            <!--ANN-->
+            <div class="hyper">
+                <label for="layers">n_layers:</label>
+                <input class="reseter" id="layers" type="number" placeholder="Enter" name="CP_layers">
+            </div>
+
+            <!--RP multiple regression-->
+            <div class="hyper">
+                <p>pls select default parameters</p>
+            </div>
+            <div class="hyper">
+                <label for="RP_DT">n_trees:</label>
+                <input class="reseter" id="RP_DT" type="number" placeholder="Enter" name="RP_Decision_tree">
+            </div>
+            <div class="hyper">
+                <label for="RP_layers">n_layers:</label>
+                <input class="reseter" id="RP_layers" type="number" placeholder="Enter" name="RP_ANN">
+            </div>
+
+            
+            <div id="sub">
+                <button>submit</button>
+            </div>
+
+        </form>
+
+        <a href="help.html#ml">Tutorials</a>
+    </body>
+</html>

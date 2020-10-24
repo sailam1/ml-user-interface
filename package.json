@@ -1,0 +1,36 @@
+{
+  "name": "ml-project",
+  "version": "1.0.0",
+  "description": "ml web interface",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "child_process": "^1.0.2",
+    "csv-parser": "^2.3.3",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "jsdom": "^16.2.2",
+    "json2csv": "^5.0.1",
+    "json2xls": "^0.1.2",
+    "jsonexport": "^2.4.1",
+    "mongoose": "^5.9.19",
+    "node": "^14.2.0",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "xlsx": "^0.16.0",
+    "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sailam mungilwar",
+  "license": "ISC"
+}

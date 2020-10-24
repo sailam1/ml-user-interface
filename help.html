@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ml</title>
+        <link rel="stylesheet" href="css/style_help.css">
+        <link rel="icon" href="images/favicon2.ico">
+    </head>
+    <body>
+        <h1>Tutorials</h1>
+        <nav>
+            <a href="home.html">home</a>
+            <a href="datapre.html">data-processing</a>
+            <a href="ML.html">Machine Learning</a>
+            <a href="predator.html">predictor</a>
+            <a class="active" href="help.html">Help</a>
+            
+        </nav>
+        <h2>for users who what to make only use of predictor upload same file with different name at home page</h2>
+        <h2 id="h">Home</h2>
+        <ol>
+            <li><h3>uploading the training file</h3>
+                <ul>
+                    <li>file which has the training data</li>
+                    <li>last column should be the predicting column for supervised learning</li>
+                </ul>
+            </li>
+            <li><h3>uploading the file to predict</h3>
+                <ul>
+                    <li>file which has features for predicting values</li>
+                    <li>make sure both files have same features with same order</li>
+                </ul>
+            </li>
+        </ol>
+        <h2 id="dp">Data preprocessing</h2>
+        <ol>
+            <li>
+                <h3>Features</h3>
+                <ul>
+                    <li>these are the columns which are used to find relation between predicting columns and input data</li>
+                    <li>make sure these are accurate as much as possible</li>
+                </ul>
+            </li>
+            <li>
+                <h3>To predict</h3>
+                <ul>
+                    <li>column which contains data to predict</li>
+                </ul>
+            </li>
+            <li>
+                <h3>choose to replace missing values</h3>
+                <ul>
+                    <li>the method choosen will replace the empty values with these values</li>
+                </ul>
+            </li>
+            <li>
+                <h3>choose column number which has type "names"</h3>
+                <ul>
+                    <li>to replace word type of data to an integer type data</li>
+                </ul>
+            </li>
+        </ol>
+        <h2 id="ml">Machine Learning</h2>
+        <ol>
+            <li>
+                <h3>Regression Problem</h3>
+                <ul>
+                    <li>if the output/y column has continuous values</li>
+                    <li>like numbers from 0 to infinity with float and integer type</li>
+                    <li>Ex...205,208.46,4000,915.26,etc</li>
+                    <li>choose regression problem</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Classification Problem</h3>
+                <ul>
+                    <li>if the output/u column has discreate values</li>
+                    <li>like only integer or float</li>
+                    <li>EX...0,1,2,2,1,0,4,etc</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Clustering</h3>
+                <ul>
+                    <li>this algorithms are used for grouping</li>
+                    <li>ex..if mall has varity of customers and they want to group customers on their likes and dislikes .they your output will have two groups</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Predictor</h2>
+        <ol>
+            <li>
+            <h3>input field</h3>
+                <ul>
+                    <li>Enter the data related to the uploaded file</li>
+                    <li>the inputs are caseSensitive</li>
+                    <li>check before you write the data</li>
+                </ul>
+            </li>
+            <li>
+                <h3>making prediction for input data</h3>
+                <ul>
+                    <li>click submit button for obtaining value</li>
+                </ul>
+            </li>
+        </ol>
+        <form method="POST" action="/signout">
+            <button id="logout" href="signout" role="button">signout</button>
+        </form>
+    </body>
+</html>

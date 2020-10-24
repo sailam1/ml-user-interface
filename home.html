@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ml</title>
+        <link rel="stylesheet" href="css/style_home.css">
+        <link rel="icon" href="images/favicon2.ico">
+    </head>
+    <body>
+        <h1>Home</h1>
+        <nav>
+            <a class="a_style" id="active" href="home.html">home</a>
+            <a class="a_style" href="datapre.html">data-processing</a>
+            <a class="a_style" href="ML.html">Machine Learning</a>
+            <a class="a_style" href="predator.html">predictor</a>
+            <a class="a_style" href="help.html">Help</a>
+        </nav>
+        <form class="form" action="/submit" enctype="multipart/form-data" method="POST">
+            <h2>upload the training file:</h2>
+            <input type="file" name="file" accept=".csv"><br><br>
+            <h2>upload the file to predict:</h2>
+            <input type="file" name="file1" accept=".csv"><br><br>
+            <div class="center">
+                <input type="submit" value="upload">
+            </div><br><br>
+        </form><br><br>
+        <p class="style">note: only upload csv file</p>
+        <p class="style">note: make sure both files have same parameters</p>
+        <footer>
+            <p>plese visit help page for tutorials</p>
+            <p>contact <a href="details.html">Details</a></p>
+        </footer>
+        <form method="POST" action="/signout">
+            <button id="logout" href="signout" role="button">signout</button>
+        </form>
+    </body>
+</html>

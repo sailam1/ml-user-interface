@@ -1,0 +1,127 @@
+body{
+    background-image: url("../images/background_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    border:solid;
+    border-color:rgb(8, 8, 8);
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    background-color: rgb(51, 50, 50);
+}
+.a_style{
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    margin-left: -3.8px;
+    border:solid;
+    border-color: rgb(15, 15, 15);
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+.a_style:hover{
+    color:rgba(0, 0, 0, 0.63);
+    font-size: 40px;
+    background-color:rgb(139, 138, 138);
+    transition: 0.4s;
+}
+#active{
+    background-color: tomato;
+}
+
+select{
+    width: 50%;
+    padding: 12px 11px;
+    margin-left: 10px;
+    border: solid 2px;
+    border-color: #ccc;
+    border-radius: 5px;
+}
+
+select:hover{
+    padding:15px 12px;
+    border-color: blue;
+}
+
+label{
+    font-size: x-large;
+    margin-left: 8px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+select,select option{
+    font-size: medium;
+}
+#sub{
+    text-align: center;
+}
+button{
+    font-size: large;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+button:hover{
+    font-size: x-large;
+    padding:10px 25px;
+    background-color: rgba(26, 236, 6, 0.384);
+    transition: 0.2s;
+}
+
+.positions{
+    position: relative;
+}
+
+#loader{
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #444444; 
+    width: 70px; 
+    height: 70px; 
+    animation-name: spin; 
+    animation-duration: 15s;
+    animation-timing-function: ease;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.center{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+#logout{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right:0 ;
+    background-color: yellowgreen;
+    font-size: large;
+    padding: 7px 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#logout:hover{
+    background-color: greenyellow;
+    padding: 8px 7px;
+    transition: 0.1s;
+}
+
+

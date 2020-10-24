@@ -1,0 +1,114 @@
+body{
+    background-image: url("../images/background_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    position: sticky;
+    top: 2px;
+    border:solid;
+    border-color:rgb(8, 8, 8);
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    background-color: rgb(51, 50, 50);
+}
+.a_style{
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    margin-left: -3.8px;
+    border:solid;
+    border-color: rgb(15, 15, 15);
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+.a_style:hover{
+    color:rgba(0, 0, 0, 0.63);
+    font-size: 40px;
+    background-color:rgb(139, 138, 138);
+    transition: 0.4s;
+}
+#active{
+    background-color: tomato;
+}
+
+input[type=file],select{
+    text-align: center;
+    display: inline-block;
+    font-size: x-large;
+}
+
+input[type=submit]{
+    background-color:rgb(89, 172, 82);
+    border:solid;
+    border-color: black;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:8px;
+    padding-bottom: 8px;
+    text-align: center;
+
+}
+input[type=submit]:hover{
+    background-color: green;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.form{
+    text-align: center;
+    margin-top:150px;
+    padding-left: 135px;
+}
+.center{
+    text-align: center;
+}
+
+
+.style{
+    text-align: center;
+    font-size: x-large;
+    color:black;
+    text-decoration-line: underline;
+}
+.style2{
+    text-align: center;
+}
+footer{
+    margin-top: 30px;
+    border:solid;
+    border-color: black;
+    text-align: center;
+    font-size: x-large;
+}
+a{
+    text-decoration: none;
+    font-size: x-large;
+    color: red;
+}
+#logout{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right:0 ;
+    background-color: yellowgreen;
+    font-size: large;
+    padding: 7px 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#logout:hover{
+    background-color: greenyellow;
+    padding: 8px 7px;
+    transition: 0.1s;
+}

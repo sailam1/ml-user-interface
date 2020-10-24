@@ -1,0 +1,49 @@
+body{
+    background-image: url("../images/background_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+}
+
+div{
+    position: relative; 
+    margin: auto;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    top: 150px;
+    font-size: xx-large;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{color: rgb(180, 174, 174);background-color: black;}
+    50%{color: black;background-color:white;width: 500px;}
+    /* from{color: black;background-color:white;} */
+    100%{color: red;background-color:greenyellow;}
+}
+#logout{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right:0 ;
+    background-color: yellowgreen;
+    font-size: large;
+    padding: 7px 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#logout:hover{
+    background-color: greenyellow;
+    padding: 8px 7px;
+    transition: 0.1s;
+}
+
+

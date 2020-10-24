@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ml</title>
+        <link rel="stylesheet" href="css/style_datapreprocessing.css">
+        <link rel="icon" href="images/favicon2.ico">
+    </head>
+    <body>
+        <h1>ML Interface</h1>
+        <nav>
+            <a class="a_style" href="home.html">home</a>
+            <a class="a_style" id="active" href="datapre.html">data-processing</a>
+            <a class="a_style" href="ML.html">Machine Learning</a>
+            <a class="a_style" href="predator.html">predictor</a>
+            <a class="a_style" href="help.html">Help</a>
+            
+        </nav>
+        <p id="uni">click on column to know its position</p>
+        <iframe class="backColor" src="tables.html" width=100% height=300px>view excel</iframe><br><br>
+        <div id="test"></div>
+        <!-- <button onclick="abc()">click me to see</button> -->
+        <h2>fill the form:</h2>
+        <form action="/preprocessinput" method="POST">
+            <label for="X">Features(enter starting and ending of feature column with spacified format):</label><br>
+            <input type="text" name="X" id="X" placeholder="ex: 2:6" required><br><br>
+            <label for="y">To predict(column to predict):</label><br>
+            <input type="text" name="y" id="y" placeholder="ex: 10" required><br><br>
+            <label for="imputer">choose to replace missing value: </label><br>
+            <select id="imputer" name="imputer">
+                <option value="mean">mean</option>
+                <option value="median">median</option>
+                <option value="mode">mode</option>
+            </select><br><br>
+            <label for="encoding">column number which has type "names":</label><br>
+            <input type="text" id="encoding" name="encoding" placeholder="Ex: 2 4 5 9" required><br><br>
+            <div class="center">
+                <button onclick="return checker()" id="submit">submit</button>
+            </div>
+
+        </form>
+        <form method="POST" action="/signout">
+            <button id="logout" href="signout" role="button">signout</button>
+        </form>
+        <script src="javascript/datapre.js"></script>
+    </body>
+</html>
