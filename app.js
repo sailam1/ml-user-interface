@@ -141,55 +141,24 @@ app.post("/submit",function(req,res){
         var data=req.files.file.data;
         var value="";
 
-        filed.mv("./upload/"+filename,function(err){
+        filed.mv("./upload/dataset.csv",function(err){
             if(err){
                 console.log(err);
                 res.redirect("/");
             }
             else{
-                console.log("file1 uploaded");
+                console.log("home file1  uploaded and renamed datase.csv");
                 res.redirect("/datapre.html");
                 
             }
-            fs.rename("./upload/"+filename,"./upload/dataset.csv",function(err){
-                if(err){
-                    console.log(err);
-                }
-                else{
-                    console.log("file1 renamed");
-                }
-                fs.close(1,function(err){
-                    if(err){
-                        console.log(err);
-                    }
-                })
-            })
-
-
-            
         })
-
-
-        fileds.mv("./upload/"+filename1,function(err){
+        fileds.mv("./upload/find.csv",function(err){
             if(err){
                 console.log("file 2 not uploaded");
             }
             else{
-                console.log("file2 uploaded");
+                console.log("home file2 uploaded and renamed find.csv");
             }
-            fs.rename("./upload/"+filename1,"./upload/find.csv",function(err){
-                if(err){
-                    console.log(err);
-                }
-                else{
-                    console.log("file2 renamed");
-                }
-                fs.close(2,function(err){
-                    if(err){
-                        console.log(err);
-                    }
-                })
-            })
         })
 
 
@@ -313,7 +282,7 @@ app.post("/preprocessinput",function(req,res){
     pythons.stdout.on('data',function(data){
         console.log("pipe data from pyhton script");
 
-        // res.sendFile(__dirname+"/preprocess_download.html")
+        // res.sendFile(__dirname+"/preprocess_download.html")              to download preprocessing file
         res.redirect("/ML.html");
 
     });
